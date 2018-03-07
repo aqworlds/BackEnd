@@ -80,18 +80,7 @@ function somaCem() {
     console.log(numero);
 }
 
-// exercicio10 
-function factorial(num) {
-    if (num > 1) {
-        for (k = 2; k <= num; k++) {
-            num = num * k;
-            return num;
-        }
-    }
-    console.log(num)
-}
-
-//exercicio11
+//exercicio10
 function factorial(x) {
     if (x == 0) {
         return 1;
@@ -105,6 +94,43 @@ function totalF (){
     console.log("O factorial do numero é " + valor)
 }
 
-// exercicio
+// exercicio 11 
+function maximo(num1,num2,num3){
+    if(num1 > num2 && num1 > num3){
+        return num1;
+    }
+    if(num2 > num1 && num2 > num3){
+        return num2;
+    }
+    else {
+        return num3;
+    }
+}
+
+function minimo(num1,num2,num3){
+    if(num1 < num2 && num1 < num3){
+        return num1;
+    }
+    if(num2 < num1 && num2 < num3){
+        return num2;
+    }
+    else {
+        return num3;
+    }
+}
+function media(num1,num2,num3){
+    return (num1+num2+num3)/3;
+}
+
+function total11(){
+    num1=3;
+    num2=6;
+    num3=9;
+    valor_Max = maximo(num1,num2,num3);
+    valor_Min = minimo(num1,num2,num3);
+    valor_Med = media(num1,num2,num3);
+    return ("O maximo é : " + valor_Max + '\n' + "O minimo é :" + valor_Min + '\n' + "A media é :" + valor_Med + '\n')
+}
+
 //inline 
-operacao(2,3,'+');
+console.log(total11());
