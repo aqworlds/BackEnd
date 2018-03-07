@@ -59,35 +59,52 @@ function nMes(mes) {
 }
 
 // exercicio7
-function operacao(numP1,numP2,op){
-    if (op == "+"){
-        console.log(numP1+numP2)
+function operacao(numP1, numP2, op) {
+    if (op == "+") {
+        console.log(numP1 + numP2)
     }
 }
 
 // exercicio8
-function multiplos(num){
-    
+function multiplos(num) {
+
 
 }
 
 // exercicio9
-function somaCem(){
+function somaCem() {
     var numero = 0;
-    for (i = 0; i <101; i++) {
+    for (i = 0; i < 101; i++) {
         numero = numero + i;
     }
     console.log(numero);
 }
 
 // exercicio10 
-function factorial(num){
-    if( num > 1 ){
-        for( k=2; k<=num; k++){
-            num = num*k;
+function factorial(num) {
+    if (num > 1) {
+        for (k = 2; k <= num; k++) {
+            num = num * k;
             return num;
-    }}
+        }
+    }
     console.log(num)
 }
+
+//exercicio11
+function factorial(x) {
+    if (x == 0) {
+        return 1;
+    }
+    return factorial=  x * factorial(x - 1);
+
+}
+function totalF (){
+    var x = 5
+    var valor = factorial(x);
+    console.log("O factorial do numero é " + valor)
+}
+
+// exercicio
 //inline 
-nMes(2);
+operacao(2,3,'+');

@@ -1,9 +1,6 @@
-var person = {
-    firstName: "James",
-    LastName: "Bond",
-    age:15,
-    getFullName: function(){
-        return this.firstName + ' ' + this.LastName
-    }
-};
-console.log(person.firstName)
+// exercicio1
+function mCorporal(peso,altura){
+    imc = peso/(altura)^2;
+    return imc
+}
+mCorporal(2,3);
